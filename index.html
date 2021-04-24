@@ -26,16 +26,16 @@
                         <div class="row form-row my-2">
                             <div class="form-group col-5">
                                 <label for="inputCard">Card #</label>
-                                <input class="form-control" type="tel" name="card" placeholder="XXXXXXXXXXXXXXXXX"
+                                <input class="form-control" required pattern="[0-9]{16}" title="El formato debe coincidir con 16 números." type="text" name="card" placeholder="XXXXXXXXXXXXXXXXX"
                                     id="inputCard">
                             </div>
                             <div class="form-group col-3">
                                 <label for="inputCvc">CVC #</label>
-                                <input class="form-control" type="tel" name="cvc" placeholder="0000" id="inputCvc">
+                                <input class="form-control" required pattern="[0-9]{3,4}" title="El formato debe coincidir con 3-4 números." type="text" name="cvc" placeholder="0000" id="inputCvc">
                             </div>
                             <div class="form-group col-4">
                                 <label for="inputAmount"> Amount</label>
-                                <input class="form-control" type="tel" name="Amount" placeholder="Amount"
+                                <input class="form-control" required pattern="[0-9]{1,5}" title="Solo números. (Cantidad max 99.999€)" type="text" name="Amount" placeholder="Amount (€)"
                                     id="inputAmount">
                             </div>
                         </div>
@@ -43,24 +43,24 @@
                         <div class="row form-row my-2">
                             <div class="form-group col-6">
                                 <label for="inputFirstName">First Name</label>
-                                <input class="form-control" type="text" name="firstname" id="inputFirstName">
+                                <input class="form-control" required pattern="[A-z ]{1,50}" title="Solo texto" type="text" name="firstname" id="inputFirstName">
                             </div>
                             <div class="form-group col-6">
                                 <label for="inputLastName">Last Name</label>
-                                <input class="form-control" type="text" name="lasttname" id="inputLasttName">
+                                <input class="form-control" required pattern="[A-z ]{1,50}" title="Solo texto" type="text" name="lasttname" id="inputLasttName">
                             </div>
                             <div class="row form-row my-2">
                                 <div class="form-group col-6">
                                     <label for="inputCity">City</label>
-                                    <input class="form-control" type="text" name="City" id="inputCity">
+                                    <input class="form-control" required pattern="[A-z ]{1,50}" title="Solo texto" type="text" name="City" id="inputCity">
                                 </div>
                                 <div class="form-group col-3">
                                     <label for="inputState">State</label>
-                                    <input class="form-control" type="text" name="State" id="inputState">
+                                    <input class="form-control" required pattern="[A-z ]{1,50}" title="Solo texto" type="text" name="State" id="inputState">
                                 </div>
                                 <div class="form-group col-3">
                                     <label for="inputPostalCode">Postal Code</label>
-                                    <input class="form-control" type="tel" name="PostalCode" placeholder="PostalCode"
+                                    <input class="form-control" required pattern="[0-9]{5}" title="Deben ser 5 números." type="text" name="PostalCode" placeholder="PostalCode"
                                         id="inputPostalCode">
                                 </div>
                             </div>
@@ -70,25 +70,25 @@
 
                                     <div class="bg-secondary rounded border d-flex flex-wrap py-2 px-1">
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            <input class="form-check-input" required type="radio" name="inlineRadioOptions"
                                                 id="inlineRadio1" value="option1">
                                             <label class="form-check-label" for="inlineRadio1"><i
                                                     class="fab fa-cc-mastercard"></i></label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            <input class="form-check-input" required type="radio" name="inlineRadioOptions"
                                                 id="inlineRadio2" value="option2">
                                             <label class="form-check-label" for="inlineRadio2"><i
                                                     class="fab fa-cc-visa"></i></label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            <input class="form-check-input" required type="radio" name="inlineRadioOptions"
                                                 id="inlineRadio3" value="option3">
                                             <label class="form-check-label" for="inlineRadio3"><i
                                                     class="fab fa-cc-diners-club"></i></label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            <input class="form-check-input" required type="radio" name="inlineRadioOptions"
                                                 id="inlineRadio4" value="option4">
                                             <label class="form-check-label" for="inlineRadio4"><i
                                                     class="fab fa-cc-amex"></i></label>
@@ -110,8 +110,8 @@
                         </div>
                     </div>
                     <div class="card-footer d-flex justify-content-end">
-                        <button type="button" class="btn btn-secondary m-1">Cancel</button>
-                        <input class="btn btn-primary m-1" type="submit" value="Send">
+                        <button type="button" class="btn btn-secondary m-1" role="link" onclick="window.location='./index.html'">Cancel</button>
+                        <input class="btn btn-primary m-1" required type="submit" value="Send">
                     </div>
                 </form>
             </div>
