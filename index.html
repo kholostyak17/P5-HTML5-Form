@@ -26,16 +26,16 @@
                         <div class="row form-row my-2">
                             <div class="form-group col-5">
                                 <label for="inputCard">Card #</label>
-                                <input class="form-control" required pattern="[0-9]{16}" title="El formato debe coincidir con 16 números." type="text" name="card" placeholder="XXXXXXXXXXXXXXXXX"
+                                <input class="form-control" required pattern="[0-9]{16}" title="El formato debe coincidir con 16 números." type="number" name="card" placeholder="XXXXXXXXXXXXXXXXX"
                                     id="inputCard">
                             </div>
                             <div class="form-group col-3">
                                 <label for="inputCvc">CVC #</label>
-                                <input class="form-control" required pattern="[0-9]{3,4}" title="El formato debe coincidir con 3-4 números." type="text" name="cvc" placeholder="0000" id="inputCvc">
+                                <input class="form-control" required pattern="[0-9]{3,4}" title="El formato debe coincidir con 3-4 números." type="number" name="cvc" placeholder="0000" id="inputCvc">
                             </div>
                             <div class="form-group col-4">
                                 <label for="inputAmount"> Amount</label>
-                                <input class="form-control" required pattern="[0-9]{1,5}" title="Solo números. (Cantidad max 99.999€)" type="text" name="Amount" placeholder="Amount (€)"
+                                <input class="form-control" required pattern="[0-9]{1,5}" title="Solo números. (Cantidad max 99.999€)" type="number" name="Amount" placeholder="Amount (€)"
                                     id="inputAmount">
                             </div>
                         </div>
@@ -60,7 +60,7 @@
                                 </div>
                                 <div class="form-group col-3">
                                     <label for="inputPostalCode">Postal Code</label>
-                                    <input class="form-control" required pattern="[0-9]{5}" title="Deben ser 5 números." type="text" name="PostalCode" placeholder="PostalCode"
+                                    <input class="form-control" required pattern="[0-9]{5}" title="Deben ser 5 números." type="number" name="PostalCode" placeholder="PostalCode"
                                         id="inputPostalCode">
                                 </div>
                             </div>
